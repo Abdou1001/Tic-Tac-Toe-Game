@@ -1,0 +1,142 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  outline: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: #1b1b1b;
+  font-family: "Shantell Sans", serif;
+  font-weight: 900;
+}
+button {
+  font-family: "Shantell Sans", serif;
+  font-weight: 700;
+}
+/* color */
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+.allContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  flex-direction: column;
+  position: relative;
+}
+#appContainer {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* Start Header Style */
+.header {
+  width: 300px;
+  margin: 20px 0px 10px;
+  font-size: 19px;
+}
+.instruction {
+  background-color: #c6c6c636;
+  color: white;
+  padding: 10px;
+  border-radius: 40px;
+  box-shadow: 0 5px 13px rgba(0, 0, 0, 0.3);
+}
+/* End Header Style */
+/* Start Body Style */
+.gridContainer {
+  background-color: #f0db4f;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  aspect-ratio: 1;
+  height: 100%;
+  padding: 35px;
+  border: 12px solid #4d4d4d;
+  border-radius: 38px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.9);
+}
+.square {
+  padding: 30px;
+  border: 2px solid #1d1d1d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.squareContant {
+  height: 20px;
+  width: 20px;
+}
+.square:hover {
+  background-color: #c6b439;
+}
+.square:first-of-type,
+.square:nth-of-type(2),
+.square:nth-of-type(3) {
+  border-top: none;
+}
+.square:first-of-type,
+.square:nth-of-type(4),
+.square:nth-of-type(7) {
+  border-left: none;
+}
+.square:nth-of-type(3),
+.square:nth-of-type(6),
+.square:nth-of-type(9) {
+  border-right: none;
+}
+.square:nth-of-type(7),
+.square:nth-of-type(8),
+.square:nth-of-type(9) {
+  border-bottom: none;
+}
+/* End Body Style */
+/* Start footer Style */
+.btn {
+  font-size: 24px;
+  padding: 7px 30px;
+  border-radius: 30px;
+  color: white;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+  background-color: rgb(84, 60, 172);
+  margin-top: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  box-shadow: 0 7px 13px rgba(0, 0, 0, 0.9);
+  background-color: rgb(93, 80, 179);
+}
+/* End footer Style */
+/* Start Score Style */
+.score {
+  position: absolute;
+  top: 15px;
+  transform: translateX(-50%);
+  color: white;
+  padding: 10px 15px;
+  background-color: red;
+  border-radius: 7px;
+  box-shadow: 0 7px 13px rgba(0, 0, 0, 0.9);
+  font-size: 20px;
+}
+.xScore {
+  left: 57%;
+  background-color: red;   
+}
+.oScore {
+  left: 43%;
+  background-color: blue;
+}
+/* End Score Style */
